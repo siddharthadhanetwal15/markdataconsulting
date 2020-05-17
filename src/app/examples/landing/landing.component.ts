@@ -37,6 +37,7 @@ export class LandingComponent extends NgbdModalComponent implements OnInit {
 
     get message() { return this.heroForm.get('message'); }
     sendMessage() {
+        this.open();
         this.resetFields();
     }
     resetFields() {
